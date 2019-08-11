@@ -1,0 +1,1088 @@
+/* my defaults */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+* li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Img gallery */
+#bodyImgLayout{
+    width:100%;
+    height:100%;
+    background-color:#000000c2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display:none;
+    align-items: center;
+    justify-content:center;
+}
+
+.bLayoutItem{
+    width:100%;
+    height:50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgBox{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    color: white;
+    font-size:0.9em
+    }
+
+.bLayoutItem i{
+    color:white;
+    font-size:2.8em;
+    cursor:pointer; 
+}
+.imgBox .imgContain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* end Img gallery */
+/* /////////////////////////////////////////////////////////////////////////////////// */
+/* Header Section */
+header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.219);
+    transition: all 0.3s;
+}
+header .responsiveMenu{
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    padding:20px;
+    background-color:white;
+}
+header .responsiveMenu li.active{
+   color:#764ff9;
+}
+
+header .responsiveMenu li{
+    color:#8e93a7;
+}
+
+header .responsiveMenu li:hover{
+    color:#764ff9;
+}
+header .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .navigation .menubar{
+    display: none;
+}
+header .navigation ul{
+    display: flex;
+    margin: 0;
+}
+header .navigation ul li{
+    position: relative;
+}
+
+header .navigation ul li.active a{
+    color:#764ff9;
+}
+
+header .navigation ul li.active::before{
+    content:"";
+    width: 4px;
+    height: 35px;
+    background-color: #764ff9;
+    position: absolute;
+    top: -37px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+}
+header .navigation ul li:not(:last-child){
+    margin:0 15px;
+}
+header .navigation ul li::before{
+   content:"";
+   width: 4px;
+   height: 35px;
+   background-color: #764ff9;
+   position: absolute;
+   top: -70px;
+   opacity: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   transition: all 0.2s ease-in-out;
+
+}
+
+
+header .navigation ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color:#8e93a7;
+    transition: all 0.2s;
+}
+header .navigation ul li a:hover{
+    color:#764ff9;
+}
+
+header .navigation ul li:hover::before{
+    opacity: 1;
+    top: -37px;
+}
+/* End Header Section */
+
+
+
+
+/* Main Back */
+#mainBack{
+    width: 100%;
+    height: 750px;
+    background-color: #f5f5f5;
+    margin-top:80px;
+    display: flex;
+    align-items: center;
+}
+
+#mainBack .backwordCont{
+    display: flex;
+    align-items: center;
+}
+#mainBack .backwordCont .backword h3{
+   font-size: 2.3em;
+   color: #764ff9;
+}
+#mainBack .backwordCont .backword h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #32333c;
+ }
+
+ #mainBack .backwordCont .backword p{
+  color: #8e93a7;
+ }
+
+ #mainBack .backwordCont .backword .backBtn{
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    background-color: #764ff9;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
+    transition: all 0.3s;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#mainBack .backwordCont .backword .backBtn:hover{
+    background-color: #ffffff;
+    border:1px solid #764ff9;
+    color:#764ff9;
+}
+
+#mainBack .backimg{
+    width:500px;
+    height: 580px;
+    border: 20px solid #764ff9;
+}
+
+#mainBack .backimg img{
+   transform: translateY(-60px)
+}
+
+#mainBack .socialMediaIcons{
+    display: flex;
+}
+#mainBack .socialMediaIcons .circles{
+        width:50px;
+        height: 50px;
+        border:1px solid #cfcfcf;
+        border-radius:100%;
+        margin-right: 10px;
+    text-align:center;
+    line-height:50px;
+    transition: all 0.3s;
+    cursor:pointer;
+}
+
+
+
+
+#mainBack .socialMediaIcons .circles i{
+    font-size:1.3em;
+    color:#cfcfcf;
+   transition: all 0.3s;
+
+}
+
+#mainBack .socialMediaIcons .circles:hover{
+    border:1px solid #764ff9;
+    background-color: #764ff9;
+}
+#mainBack .socialMediaIcons .circles:hover i{
+    color:white;
+}
+
+/* Main back */
+
+
+/* About Section */
+#aboutSec{
+    width: 100%;
+    height:600px;
+    display: flex;
+    align-items: center;
+}
+
+#aboutSec .aboutHeader{
+text-align:center;
+margin-bottom: 40px;
+}
+#aboutSec .aboutHeader h2{
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#aboutSec .aboutHeader p{
+    color:#8e93a7;
+
+}
+
+#aboutSec .aboutContent h6{
+    color:#32333c;
+    margin-bottom: 20px;
+
+}
+
+#aboutSec .aboutContent p{
+    color:#8e93a7;
+
+}
+
+#aboutSec .aboutSkills .htmlSkill{
+    display: flex;
+    justify-content: space-between;
+}
+#aboutSec .aboutSkills .skills{
+   margin-bottom: 15px;
+}
+
+#aboutSec .aboutSkills .skills .progress{
+    height: 5px;
+ }
+ #aboutSec .aboutSkills .skills .progress .progress-bar{
+    background-color: #764ff9;
+ }
+ 
+
+
+
+/* End About Section */
+
+
+/* My Services */
+#myServices{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+}
+
+
+#myServices .serviceHeader{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#myServices .serviceHeader h2{
+    font-size:2.8em;
+    font-weight:bold;
+    color: #32333c;
+}
+#myServices .serviceHeader p{
+    color: #8e93a7;
+}
+
+#myServices .servicecardbox{
+    text-align: center;
+    padding: 20px 10px;
+    border: 1px solid #8e93a752;
+    transition: all 0.4s;
+    margin-bottom:20px;
+}
+#myServices .servicecardbox .iconWord{
+    margin: 20px 0;
+}
+
+#myServices .servicecardbox .iconWord i{
+    font-size:4em;
+    margin-bottom:25px;
+    color:#764ff9;
+}
+#myServices .servicecardbox .iconWord h4 {
+   font-size: 1.45em;
+}
+#myServices .servicecardbox p {
+    color:#8e93a7;
+ }
+
+#myServices .servicecardbox .iconWord h4 a{
+    text-decoration: none;
+    color:#32333c;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+#myServices .servicecardbox .iconWord h4:hover a{
+    color:#764ff9;
+}
+
+#myServices .servicecardbox:hover{
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.157);
+}
+/* End My Services */
+
+
+/* Download Cv */
+#downloadCv{
+    width: 100%;
+    height: 400px;
+    background-image: url("images/cvdownload.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#downloadCv .layoutDC{
+    width: 100%;
+    height: 400px;
+    background-color: #774ff9a8;
+    display: flex;
+    align-items: center;
+}
+
+#downloadCv .layoutDC .downloadContent{
+   text-align: center;  
+}
+
+#downloadCv .layoutDC .downloadContent h2{
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom:25px;
+    }
+ #downloadCv .layoutDC .downloadContent p{
+     color: #ffffff;
+    margin-bottom:50px;
+     
+  }
+ 
+  #downloadCv .layoutDC .downloadContent .downloadsBtn a{
+    font-size: 1.3em;
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 50px;
+    border:1px solid white;
+    transition: all 0.3s;
+    color: #764ff9;
+    text-decoration: none;
+    margin-right: 30px;
+ }
+
+ 
+
+ #downloadCv .layoutDC .downloadContent .downloadsBtn a:last-child{
+    padding: 10px 40px;
+    background-color: transparent;
+    margin-right: 0;
+    color: white;
+
+ }
+
+ #downloadCv .layoutDC .downloadContent .downloadsBtn a:hover{
+    border-color: #764ff9;
+    background-color: #764ff9;
+    color: white;
+    text-decoration: none;
+ }
+
+ #downloadCv .layoutDC .downloadContent .downloadsBtn a:hover:last-child{
+    background-color: rgba(255, 255, 255, 0.281);
+    border-color: rgba(255, 255, 255, 0.281);
+ }
+
+ /* End Download Cv */
+
+
+
+/* Recent Works  */
+#recentWorks{
+    width: 100%;
+    height:1100px;
+    display: flex;
+    align-items: center;
+}
+
+#recentWorks .recentHeader {
+
+    margin-bottom:20px;
+}
+#recentWorks .recentHeader h2{
+    font-size:2.8em;
+    font-weight: bold;
+    color:#32333c;
+    margin-bottom:20px;
+}
+
+#recentWorks .recentHeader p{
+    color:#8e93a7;
+}
+#recentWorks .recentImgBox{
+    position: relative;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+
+#recentWorks .imglayout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#774ff9c4;
+    opacity:0;
+    visibility: hidden;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#recentWorks .imglayout .imgControl h4{
+    color:white;
+    font-weight: bold;
+    transform: translateY(-30px);
+    transition: all 0.5s;
+}
+
+#recentWorks .imglayout .imgControl hr{
+   width: 50%;
+   background-color:white;
+   height:3px;
+
+}
+
+#recentWorks .imglayout .imgControl .recentBtns{
+   display: flex;
+   justify-content: center;
+ }
+
+#recentWorks .imglayout .imgControl a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border-radius: 50%;
+    border:1px solid white;
+    text-decoration:none;
+    transition: all 0.5s;
+ }
+
+
+ #recentWorks .imglayout .imgControl a:first-child{
+    transform:translateX(-30px)
+  }
+
+  #recentWorks .imglayout .imgControl a:last-child{
+    transform:translateX(50px)
+  }
+#recentWorks .recentImgBox:hover .imglayout{
+   opacity:1;
+    visibility: visible;
+}
+
+#recentWorks .recentImgBox:hover .imglayout .imgControl a:first-child{
+    transform:translateX(-5px);
+}
+
+
+#recentWorks .recentImgBox:hover .imglayout .imgControl a:last-child{
+    transform:translateX(5px);
+}
+
+#recentWorks .recentImgBox:hover .imglayout .imgControl h4{
+    transform:translateX(0px);
+}
+
+
+#recentWorks .recentImgBox .imglayout .imgControl a:hover{
+    background-color:white;
+    color:#764ff9
+}
+
+
+
+/* End RecentWorks */
+
+/* Pricing Plans Section */
+#pricingPlans{
+    width:100%;
+    height:900px;
+    display: flex;
+    align-items: center;
+    background-color:#FBFBFB;
+}
+
+#pricingPlans .pricingPlanHeader{
+   text-align: center;
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: center;
+   margin-bottom:20px;
+}
+#pricingPlans .pricingPlanHeader h2{
+    font-size:2.5em;
+    font-weight:bold;
+    color:#32333c;
+}
+#pricingPlans .pricingPlanHeader p{
+    width: 67%;
+    color:#8e93a7;
+}
+
+#pricingPlans .priceBox{
+    width:100%;
+    height: 550px;
+    border:1px solid rgba(184, 184, 184, 0.514);
+    border-radius:3px;
+    box-shadow:0 0 10px rgba(173, 173, 173, 0.452);
+}
+
+#pricingPlans .priceBox .priceHeader{
+    width:100%;
+    height: 80px;
+    background-color:#764ff9;
+    text-align:center;
+    line-height:80px;
+}
+#pricingPlans .priceBox .priceHeader span{
+    font-size:1.4em;
+    font-weight:bold;
+    color:white;
+}
+
+#pricingPlans .priceBox .priceBody{
+    border-bottom:1px solid rgba(184, 184, 184, 0.514);
+    padding:20px;
+    text-align:center;
+}
+
+#pricingPlans .priceBox .priceBody p{
+    color:#8e93a7;
+}
+#pricingPlans .priceBox .priceBody h4{
+    color:#764ff9;
+    font-weight:bold;
+}
+#pricingPlans .priceBox .priceFooter{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 320px;
+    text-align:center;
+}
+
+#pricingPlans .priceBox .priceFooter .priceContent ul{
+    padding:0;    
+}
+
+
+#pricingPlans .priceBox .priceFooter .priceContent ul li{
+    margin-bottom: 10px;
+    color:#32333c;
+}
+
+#pricingPlans .priceBox .priceFooter .priceContent .priceBtn{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 50px;
+    border:1px solid #764ff9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
+    transition: all 0.3s;
+    color: #764ff9;
+    text-decoration: none;
+    margin-top:30px;
+}
+#pricingPlans .priceBox .priceFooter .priceContent .centerPrice{
+    border:1px solid #764ff9;
+    background-color: #764ff9;
+    color:white;
+}
+
+#pricingPlans .priceBox .priceFooter .priceContent .priceBtn:hover{
+    border:1px solid #764ff9;
+    background-color: #764ff9;
+    color:white;
+}
+#pricingPlans .priceBox .priceFooter .priceContent .centerPrice:hover{
+    border:1px solid #764ff9;
+    background-color: transparent;
+    color:#764ff9;
+}
+/* End Pricing Plans Section */
+
+
+/* Blog Section */
+#blog{
+    width:100%;
+    height:700px;
+    display:flex;
+    align-items:center;
+}
+#blog .blogHeader{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    text-align:center;
+    margin-bottom:30px;
+}
+#blog .blogHeader h2{
+    font-size:2.5em;
+    font-weight:bold;
+    color:#32333c;
+    margin-bottom:20px;
+}
+#blog .blogHeader p{
+    width:72%;
+    color:#8e93a7;
+}
+#blog .blogBox{
+    overflow:hidden;
+    position: relative;
+    border-radius:3px;
+    box-shadow:0 0 10px rgba(128, 128, 128, 0.541);
+}
+
+#blog .blogBox .blogImgWord{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:300px;
+    height: 134px;
+    background-color:white;
+    padding:10px 20px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items:center;
+   transition:all 0.4s;
+
+}
+
+#blog .blogBox .blogImgWord h5{
+    color:#32333c;
+    font-weight:bold;
+   transition:all 0.4s;
+
+}
+
+#blog .blogBox .blogImgWord p{
+    color:#8e93a7;
+   transition:all 0.4s;
+
+}
+
+#blog .blogBox img{
+transition:all 0.4s;
+    }
+
+#blog .blogBox:hover img{
+transform:scale(1.2);
+}
+
+#blog .blogBox:hover .blogImgWord{
+   background-color:#764ff9;
+}
+#blog .blogBox:hover .blogImgWord h5{
+   color:white;
+}
+#blog .blogBox:hover .blogImgWord p{
+    color:white;
+}
+/* End Blog Section */
+
+
+/* Contact section */
+#contact{
+    width:100%;
+    height: 1000px;
+    display: flex;
+    align-items:center; 
+}
+
+#contact .contactHeader{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align:center;
+}
+
+
+#contact .contactHeader h2{
+    font-size: 2.8em;
+    font-weight:bold;
+    color:#32333c;
+}
+
+#contact .contactHeader p{
+    width:72%;
+    color:#8e93a7;
+}
+
+#contact .contactBox{
+    width:100%;
+    height:220px;
+    padding:20px;
+    border:1px solid #9e9e9e7a;
+    text-align:center;
+    margin-top:40px;
+    transition:all 0.3s;
+}
+
+#contact .contactBox i{
+    font-size:3em;
+    color:#764ff9;
+ }
+ #contact .contactBox h4{
+    font-weight:bold;
+    color:#32333c;
+    margin: 20px 0;
+ }#contact .contactBox p{
+   color:#8e93a7;
+ }
+  
+
+
+ #contact .contactBox:hover{
+box-shadow:0 0 10px rgba(150, 150, 150, 0.431);
+}
+
+#contact .formbox{
+    margin-top:60px;
+}
+
+
+#contact .formbox form input{
+    color:#8e93a7;
+    padding:25px 15px;
+}
+
+#contact .formbox .contactBtn{
+    padding:10px 20px;
+    background-color:#764ff9;
+    color:white;
+    border-radius:30px;
+    border:none;
+    box-shadow:0 0 10px rgba(144, 144, 144, 0.397);
+}
+
+#contact .gmapSection{
+    width:100%;
+    height: 300px;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(82, 82, 82, 0.479);
+    margin-top:60px;
+    overflow:hidden;
+}
+/* End Contact section */
+
+/* Info section */
+#info{
+    width:100%;
+    height:500px;
+    background-color:#152136;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}   
+
+#info .infoContent{
+    width:50%;
+    text-align:center;
+}
+
+
+#info .infoContent p{
+    color:white;
+    margin:30px 0;
+}
+#info .infoContent .infoSocial{
+display: flex;
+justify-content: space-evenly;
+margin-top:50px;
+}
+#info .infoContent .infoCircles{
+
+    width:80px;
+    height: 80px;
+    border-radius:100%;
+    margin-right: 10px;
+     text-align:center;
+     line-height:80px;
+     transition: all 0.3s;
+   cursor:pointer;
+    font-size:2em;
+    background-color: #1C2940;
+    color:white;
+}
+
+
+#info .infoContent .infoCircles:hover{
+
+   background-color: #764ff9;
+    color:white;
+}
+
+/* End Info */
+
+
+/* Footer */
+footer{
+    background-color:#1C2940;
+    width:100%;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    overflow:hidden
+}
+
+footer p{
+   color:white;
+}
+/* End Footer */
+
+
+/* Responsive */
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    /* Header */
+    header .navigation nav {
+        display: none;
+    }
+    header .navigation .menubar{
+        display:block;
+    } header .navigation #menubar{
+        font-size: 1.6em;
+    }
+    header .navigation #closeMenu{
+        font-size: 1.8em;
+        display: none;
+    }
+    /* End Header */
+
+    /* Main Back */
+    #mainBack {
+        height: 500px;
+    }
+    #mainBack .mainImgSec {
+        display:none;
+    }
+    #mainBack .backwordCont .backword h3 {
+        font-size: 1.4em;
+    }
+    #mainBack .backwordCont .backword h1 {
+        font-size: 1.6em;
+    }
+    #mainBack .backwordCont .backword .backBtn {
+        width: 167px;
+        height: 44px;
+        padding:0;
+        font-size: 0.8em;
+    }
+    #mainBack .socialRow {
+        margin-top:50px;
+    }
+    /* End main Back */
+
+    /* About Me */
+    #aboutSec {
+        height: 932px;
+    }
+    #aboutSec .aboutHeader h2 {
+        font-size: 1.7em;
+    }
+    #aboutSec .aboutHeader p {
+        font-size: 0.8em;
+    }
+
+    #aboutSec .aboutContent h6 {
+        font-size: 1em;
+    }
+    #aboutSec .aboutContent p {
+        font-size: 0.8em;
+        margin-bottom:36px;
+    }
+    /* ENd About me */
+
+    /* My service */
+    #myServices {
+        height: 1900px;
+    }
+    #myServices .serviceHeader h2 {
+        font-size: 1.7em;
+    }
+    #myServices .serviceHeader p {
+        color: #8e93a7;
+        font-size: 0.8em;
+    }
+    #myServices .servicecardbox .iconWord i {
+        font-size: 3em;
+    }
+    #myServices .servicecardbox .iconWord h4 {
+        font-size: 1.15em;
+    }
+    #myServices .servicecardbox p {
+        color: #8e93a7;
+        font-size: 0.8em;
+    }
+    /* ENd my service */
+
+    /* Download CV */
+    #downloadCv .layoutDC .downloadContent h2 {
+        font-size: 1.7em;
+    }
+    #downloadCv .layoutDC .downloadContent p {
+        font-size: 0.8em;
+    }
+    #downloadCv .layoutDC .downloadContent .downloadsBtn a {
+        font-size: 0.8em;
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        margin-right:0;
+    }
+    /* End Download Cv */
+
+    /* Resent works */
+    #recentWorks {
+        height: 2100px;
+    }
+    #recentWorks .recentHeader h2 {
+        font-size: 1.7em;
+    }
+    #recentWorks .recentHeader p {
+        font-size: 0.8em;
+    }
+    #recentWorks .recentImgBox img {
+        width:100%;
+    }
+    #recentWorks .imglayout .imgControl h4 {
+        font-size: 1em;
+    }
+    #recentWorks .imglayout .imgControl a {
+        width: 40px;
+        height: 40px;
+        font-size:0.8em;
+    }
+    /* End recent works */
+
+    /* Pricing plans */
+    #pricingPlans {
+        height: 2000px;
+    }
+    #pricingPlans .pricingPlanHeader h2 {
+        font-size: 1.7em;
+    }
+    
+    #pricingPlans .pricingPlanHeader p {
+        font-size: 0.8em;
+    }
+    #pricingPlans .priceMargin {
+        margin-bottom:20px;
+    }
+    #pricingPlans .priceBox .priceFooter .priceContent .priceBtn {
+        margin-top: 3px;
+    }
+    /* End Pricing plans */
+    
+    /* Blog */
+    #blog {
+        height: 1500px;
+    }
+
+    #blog .blogHeader h2 {
+        font-size: 1.7em;
+        font-weight:bold;
+    }
+    #blog .blogHeader p {
+        font-size: 0.8em;
+    }
+    #blog .blogBox {
+        margin-bottom: 20px;
+    }
+    /* End blog */
+
+    /* Contact  */
+    #contact {
+        height: 1800px;
+    }
+    #contact .contactHeader h2 {
+        font-size: 1.7em;
+    }  #contact .contactHeader p {
+        font-size: 0.8em;
+    }
+    /* End contact */
+
+    /* Info */
+    
+
+    #info .infoContent {
+        width: 100%;
+        text-align: center;
+    }
+        #info .infoContent .infoCircles {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.5em;
+    }
+    /* end info */
+
+    /* Footer */
+    footer p {
+        font-size: 0.8em;
+    }
+    
+    /* ENd footer  */
+}
